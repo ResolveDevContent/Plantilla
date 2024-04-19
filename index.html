@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
     <title>Plantilla</title>
 </head>
 <body>
@@ -50,7 +52,7 @@
     <section id="sobre-nosotros">
         <article>
             <aside>
-                <img src="#" alt="">
+                <img src="#" alt="SOBRE NOSOTROS">
             </aside>
             <div>
                 <header>
@@ -78,53 +80,43 @@
 
     <section id="contacto">
         <div>
-          <div>
             <aside>
                 <header>
-                    <div>
-                      <h2>Cont&aacute;ctanos!</h2>
-                      <p>Nos comunicaremos con usted lo antes posible.</p>
-                    </div>
-                  </header>
-              <div>
-                <div>
-                  ICONO
-                </div>
-                
-                <div>
-                  <h4>INSTAGRAM</h4>
-                </div>
-              </div>
-              
-              <div>
-                <div>
-                  ICONO
-                </div>
-                
-                <div>
-                  <h4>MAIL</h4>
-                </div>
-              </div>
+                    <h2>Cont&aacute;ctanos!</h2>
+                    <p>
+                        Nos comunicaremos con usted lo antes posible.
+                    </p>
+                </header>
+
+                <ul>
+                    <li class="socials">
+                        <i></i>ICONO
+                        <span>INSTAGRAM</span>
+                    </li>
+                    <li class="socials">
+                        <i></i>ICONO
+                        <span>MAIL</span>
+                    </li>
+                </ul>
             </aside>
-            
             <section>
                 <header>
                     <h2>¡Hablemos!</h2>
                 </header>
                 <form>
                     <div>
-                    <input type="text" required name="nombre">
-                    <span>Nombre completo</span>
+                        <input type="text" required name="nombre">
+                        <span>Nombre completo</span>
                     </div>
                     
                     <div>
-                    <input type="text" required name="asunto">
-                    <span>Asunto</span>
+                        <input type="text" required name="asunto">
+                        <span>Asunto</span>
                     </div>
                     
                     <div>
-                    <textarea required name="mensaje"></textarea>
-                    <span>Escrib&iacute; tu mensaje...</span>
+                        <textarea required name="mensaje"></textarea>
+                        <span>Escrib&iacute; tu mensaje...</span>
                     </div>
                     <div>
                         <div>
@@ -137,7 +129,7 @@
                             </label>
                             <label>
                                 <input type="radio" name="mail" value="gmail">
-                                <img src="#" alt="">
+                                <img src="#" alt="GMAIL">
                             </label>
                         </div>
                     </div>
@@ -149,9 +141,7 @@
                     <a href="#" target="_blank">Enviar</a>
                     </div>
                 </form>
-            </section>
-            
-          </div>
+            </section>    
         </div>
     </section>
 
@@ -165,7 +155,7 @@
             </aside>
             <div>
                 <em>Links</em>
-                <ul>
+                <ul class="links">
                     <li>
                         <a href="#">Link1</a>
                     </li>
@@ -182,17 +172,17 @@
             </div>
             <div>
                 <em>Redes sociales</em>
-                <ul>
+                <ul class="redes">
                     <li>
                         <a href="#">
-                            <img src="#" alt="">
+                            <img src="#" alt="INSTAGRAM">
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
         <div>
-            <span>© Nombre</span>
+            <span>© ResolveDev</span>
         </div>
     </footer>
 
