@@ -16,10 +16,15 @@ ul {
     list-style: none;
 }
 
+h3 {
+    font-size: 2em;
+}
+
 #sobre-nosotros,
 #contacto,
-#servicios {
-    margin: 2em 2em 0 2em;
+#servicios,
+#datos {
+    margin: 6em 2em 0 2em;
 }
 
 .flex{
@@ -168,8 +173,60 @@ ul {
 
 #sobre-nosotros > article > div > header > span {
     text-transform: uppercase;
-    font-size: .67em;
+    font-size: .625em;
 }
+
+/* ------DATOS--------- */
+
+#datos header {
+    margin-block: 2em;
+}
+
+#datos header > em{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#datos .item + .item{
+    margin-left: 2em;
+}
+
+#datos .item > div > i {
+    width: 6em;
+    height: 6em;
+    display: block;
+    background-color: var(--bg-primary);
+}
+
+#datos .item > div:first-child::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: .2em;
+    background-color: var(--bg-secondary);
+    position: relative;
+    margin-top: 1em;
+}
+
+#datos .item > div {
+    text-align: center;
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#datos .item > div > em {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#datos .item > div > p {
+    margin-top: .5em;
+}
+
 
 /* ------SERVICIOS--------- */
 
@@ -188,61 +245,66 @@ ul {
     gap: 1em;
 }
 
-#servicios .item {
+#servicios .card {
     background-color: #eee;
     padding: 2em;
     border-radius: 1em;
     min-height: 16em;
 }
 
-#servicios .item > div > strong {
+#servicios .card > div > strong {
     font-size: 1.25em;
     color: white;
 }
 
-#servicios .item > header {
+#servicios .card > header {
     position: relative;
     gap: 0.5em;
     margin-bottom: 1em;
     max-width: 16em;
 }
 
-#servicios .item > header span {
-    font-size: 0.75em;
+#servicios .card > header > strong {
+    font-size: 2em;
 }
 
-#servicios .item > article {
+#servicios .card > header span {
+    font-size: 0.9em;
+}
+
+#servicios .card > article {
     flex-grow: 1;
 }
 
-#servicios .item > article > ul {
-    list-style: none;
+#servicios .card > article > ul {
+    list-style: disc;
     gap: 0.5em;
 }
 
-#servicios .item > article > ul > li .check {
+#servicios .card > article > ul > li .check {
     background-color: #78e08f;
 }
 
-#servicios .item > article > ul > li > span{
+#servicios .card > article > ul > li > span{
     white-space: pre-wrap;
 }
 
-#servicios .item > footer {
+#servicios .card > footer {
     margin-top: 2em;
     text-align: center;
 }
 
-#servicios .item > footer > a {
+#servicios .card > footer > a {
     background-color: var(--bg-primary);
     padding: .5em 1em;
     border-radius: 1em;
     font-weight: 600;
     color: white;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
-#servicios .item > footer > a:hover {
+#servicios .card > footer > a:hover {
     background-color: var(--bg-secondary);
 }
 
@@ -342,7 +404,7 @@ ul {
 #footer {
     background-color: gray;
     padding: 2em 2em .5em 2em;
-    margin-top: 2em;
+    margin-top: 6em;
 }
 
 #footer > section {
@@ -383,4 +445,8 @@ ul {
 #footer > div:last-child {
     margin-top: 1em;
     text-align: center;
+}
+
+#footer > div > span {
+    font-size: .75em;
 }
