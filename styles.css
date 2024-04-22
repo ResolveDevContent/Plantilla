@@ -56,9 +56,21 @@ ul {
 
 /* -------------------------- */
 
-.navbar {}
+.navbar {
+    padding: .5em 2em;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 32;
+    width: 100%;
+}
+
 .navbar > nav {
     padding: 1em 2em;
+    width: 100%;
 }
 .navbar > nav > ul {
     gap: 1em;
