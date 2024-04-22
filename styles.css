@@ -337,8 +337,6 @@ ul {
     border-radius: 1em;
 }
 
-
-
 /* -------------------------- */
 
 #footer {
@@ -352,7 +350,34 @@ ul {
 }
 
 #footer > section > aside > span {
-    width: 15em;
+    width: 20em;
+}
+
+#footer > section > article {
+    width: 100%;
+    justify-content: space-around;
+    margin-block: 3em;
+}
+
+#footer > section > article > div > em {
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+#footer .links,
+#footer .redes {
+    margin-top: 1em;
+}
+
+#footer .links > li,
+#footer .redes > li {
+    margin-block: .25em;
+}
+
+#footer .links > li a,
+#footer .redes > li a {
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 #footer > div:last-child {
