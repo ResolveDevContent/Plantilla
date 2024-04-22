@@ -9,11 +9,11 @@
 </head>
 <body>
     <header class="navbar">
-        <nav>
+        <nav class="flex items-center justify-between">
             <div>
                 <a href="#">Logo</a>
             </div>
-            <ul>
+            <ul class="flex items-center justify-center">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
@@ -28,9 +28,9 @@
         <ul>
             <li>
                 <figure>
-                    <figcaption>
-                        <article>
-                            <div>
+                    <figcaption class="flex items-center justify-center">
+                        <article class="flex flex-col">
+                            <div class="home-text flex flex-col items-center justify-center">
                                 <span>TITULO</span>
                                 <p>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae quis sed similique. Obcaecati molestiae quis sed similique
@@ -49,9 +49,9 @@
         </ul>
     </section>
 
-    <section id="sobre-nosotros">
-        <article>
-            <aside>
+    <section id="sobre-nosotros" class="flex items-center justify-center flex-col">
+        <article class="flex items-center justify-center">
+            <aside class="flex flex-col justify-center items-start">
                 <img src="#" alt="SOBRE NOSOTROS">
             </aside>
             <div>
@@ -66,12 +66,12 @@
         </article>
     </section>
 
-    <section id="servicios">
+    <section id="servicios" class="flex items-center justify-center flex-col">
         <header>
             <h3>Servicios</h3>
             <span>Determin&aacute; cu&aacute;l servicio se adapta a tus necesidades.</span>
         </header>
-        <ul>
+        <ul class="flex">
             <li></li>
             <li></li>
             <li></li>
@@ -79,21 +79,21 @@
     </section>
 
     <section id="contacto">
-        <div>
-            <aside>
-                <header>
+        <div class="flex items-center justify-center">
+            <aside class="flex flex-col items-start">
+                <header class="flex flex-col items-start">
                     <h2>Cont&aacute;ctanos!</h2>
                     <p>
                         Nos comunicaremos con usted lo antes posible.
                     </p>
                 </header>
 
-                <ul>
-                    <li class="socials">
+                <ul class="flex flex-col items-start justify-center">
+                    <li class="socials flex items-center">
                         <i></i>ICONO
                         <span>INSTAGRAM</span>
                     </li>
-                    <li class="socials">
+                    <li class="socials flex items-center">
                         <i></i>ICONO
                         <span>MAIL</span>
                     </li>
@@ -103,7 +103,7 @@
                 <header>
                     <h2>¡Hablemos!</h2>
                 </header>
-                <form>
+                <form class="flex flex-col justify-center items-center">
                     <div>
                         <input type="text" required name="nombre">
                         <span>Nombre completo</span>
@@ -145,17 +145,17 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <section>
-            <aside>
+    <footer id="footer" class="flex flex-col">
+        <section class="flex items-center ">
+            <aside class="flex flex-col items-start justify-center">
                 <img src="" alt="Logo">
                 <span>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos qui libero dolor ipsum magni.
                 </span>
             </aside>
-            <div>
+            <div class="flex flex-col items-start justify-center">
                 <em>Links</em>
-                <ul class="links">
+                <ul class="links flex flex-col items-start justify-center">
                     <li>
                         <a href="#">Link1</a>
                     </li>
@@ -172,7 +172,7 @@
             </div>
             <div>
                 <em>Redes sociales</em>
-                <ul class="redes">
+                <ul class="redes flex flex-col items-start justify-center">
                     <li>
                         <a href="#">
                             <img src="#" alt="INSTAGRAM">

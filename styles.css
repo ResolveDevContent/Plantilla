@@ -1,3 +1,10 @@
+:root {
+    --bg-primary: black;
+    --bg-secondary: gray;
+    --color-primary: black;
+    --color-secondary: gray;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,67 +22,137 @@ ul {
     margin: 2em 2em 0 2em;
 }
 
+.flex{
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.items-end {
+    align-items: end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
 /* -------------------------- */
 
 .navbar {}
 .navbar > nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1em 2em;
 }
 .navbar > nav > ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1em;
 }
 
 /* -------------------------- */
 
-#inicio {}
-
-/* -------------------------- */
-
-#sobre-nosotros > article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#inicio{
+    position: relative;
 }
+
+#inicio figure {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("");
+    background-attachment: fixed;
+}
+
+#inicio figcaption {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    backdrop-filter: brightness(.5);
+}
+
+#inicio figcaption article {
+    gap: 2.5em;
+}
+
+#inicio .home-text {
+    gap: 0.5em;
+    color: white;
+    cursor: default;
+}
+
+#inicio .home-text span {
+    font-weight: bold;
+    font-size: 3.5em;
+    height: 2.75em;
+    line-height: 1.25em;
+}
+
+#inicio .home-text em {
+    font-size: 2em;
+}
+
+#inicio .home-text p {
+    font-size: 1.125em;
+    max-width: 50em;
+}
+
+#inicio figcaption article footer a{
+    padding: 0.5em;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--bg-primary);
+    border-radius: 1em;
+}
+
+#inicio figcaption article footer a:hover {
+    background-color: var(--bg-secondary);
+}
+
+
+/* --------SOBRE NOSOTROS-------- */
 
 #sobre-nosotros > article > aside {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
 }
 
 #sobre-nosotros > article > div {
     flex: 1;
 }
 
-#sobre-nosotros > article > aside > header {
-    display: flex;
-    flex-direction: column;
-}
+/* ------SERVICIOS--------- */
 
-/* -------------------------- */
-
-#servicios {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #servicios > header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 40%;
+    text-align: center;
+    margin: 2em 0;
 }
 
-/* -------------------------- */
+#servicios > header h3 {
+    font-weight: bolder;
+}
+
+#servicios > ul {
+    align-items: stretch;
+    margin-bottom: 2em;
+}
+
+/* -------- CONTACTO --------- */
 
 #contacto {
     background-color: whitesmoke;
@@ -83,37 +160,16 @@ ul {
 
 #contacto > div {
     padding: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #contacto > div > aside {
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-#contacto > div > aside > header {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-#contacto > div > aside > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
 }
 
 #contacto .socials {
     margin-block: .5em;
     padding: 1em;
     background-color: gray;
-    display: flex;
-    align-items: center;
 }
 
 #contacto > div > section {
@@ -123,37 +179,17 @@ ul {
     border-radius: .5em;
 }
 
-#contacto > div > section > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /* -------------------------- */
 
 #footer {
-    display: flex;
-    flex-direction: column;
     background-color: gray;
     padding: 2em 2em .5em 2em;
     margin-top: 2em;
 }
 
 #footer > section {
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-}
-
-#footer > section > aside, 
-#footer > section > div,
-#footer .links, 
-#footer .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
 }
 
 #footer > section > aside > span {
