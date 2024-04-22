@@ -1,0 +1,328 @@
+
+body {
+    font-size: 3.5vw;
+}
+
+/*----------NAVBAR----------*/
+
+.navbar .navbar-logo {
+    width: 10em;
+}
+
+.navbar .navbar-responsive .icon {
+    cursor: pointer;
+}
+
+.navbar.top .navbar-responsive .icon {
+    background-color: white;
+}
+
+.navbar .navbar-responsive article.popup .icon {
+    background-color: var(--primary);
+    margin-right: .625em;
+}
+
+.navbar > nav ul,
+.navbar .navbar-buttons {
+    display: none;
+}
+
+.navbar ul li {
+    width: 100%;
+    padding-left: 1.5em;
+}
+
+.navbar .navbar-responsive > article{
+    display: none;
+}
+
+.navbar .navbar-responsive input {
+    display: none;
+}
+
+.navbar .navbar-responsive input:checked + article {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-responsive > article {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-responsive > article ul {
+    background-color: white;
+    z-index: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    width: 80%;
+    gap: 1em;
+}
+
+.navbar .navbar-responsive input:checked + article ul {
+    transition: all .5s;
+    animation: popup 1s ease-in-out ;
+}
+
+.navbar .navbar-responsive > article ul li a {
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-responsive .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .4;
+
+    height: 100vh;
+}
+
+.navbar .navbar-responsive .menu-close {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar .navbar-responsive .menu-close em {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.navbar .navbar-responsive .menu-close label{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar .navbar-responsive .menu-close .icon.close {
+    background-color: black;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar .navbar-responsive .popup ul li a span{
+    font-weight: bold;
+}
+
+.navbar .navbar-responsive ul li a span::after{
+    content: "";
+    width: 0.5em;
+    height: 0.125em;
+    background-color: transparent;
+    transition: all 0.5s;
+    display: block;
+}
+
+.navbar .navbar-responsive ul li a span:hover::after{
+    content: "";
+    width: 1.5em;
+    height: 0.125em;
+    background-color: var(--secondary);
+    display: block;
+}
+
+/*----------HOME----------*/
+
+#inicio figcaption article {
+    max-width: 100%;
+    margin-inline: 1em;
+}
+
+/*----------SERVICIOS----------*/
+#servicios > div {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#servicios > div > i {
+    width: 3.5em;
+    height: 3.5em;
+    transition: all .5s;
+    animation: right-arrow 2s ease-in-out infinite;
+}
+
+#servicios > ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 2em;
+    width: 100%;
+    justify-content: space-evenly;
+    scroll-snap-type: x mandatory;
+}
+
+#servicios .card {
+    width: 100%;
+    scroll-snap-align: center;
+    flex: none;
+}
+
+#servicios .card > div {
+    position: initial;
+}
+
+#servicios .card > div::before {
+    display: none;
+}
+
+#servicios .card > header {
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+#servicios .card > header > strong {
+    white-space: initial;
+    font-size: 1.75em;
+}
+
+#servicios .card > header > span {
+    white-space: normal;
+    font-size: 0.8em;
+}
+
+#servicios .card > article{
+    margin-top: .5em;
+}
+
+#servicios footer {
+    text-align: center;
+}
+
+#servicios .card > .ribbon {
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+/*----------SOBRE NOSOTROS---------*/
+
+#sobre-nosotros > article {
+    flex-direction: column;
+}
+
+#sobre-nosotros > article > aside {
+    width: 100%;
+}
+
+#sobre-nosotros > article > div {
+    padding-left: 0;
+}
+
+#sobre-nosotros > article > div > header {
+    margin-bottom: 2em; 
+}
+
+/*------------DATOS-------------*/
+
+#datos > div > ul {
+    flex-direction: column;
+    gap: 1em;
+}
+
+#datos .item {
+    align-items: start;
+}
+
+#datos .item > div + div {
+    text-align: start;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto .container-mail {
+    display: none;
+}
+
+/*----------FOOTER----------*/
+
+#footer > section > article {
+    flex-direction: column;
+    gap: 1em;
+}
+
+/*--------------------*/
+
+@keyframes popup {
+    0% {
+        transform: translateY(2em);
+        opacity: .7;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes right-arrow {
+    0% {
+        transform: translateX(1em);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: .7;
+    }
+}
+
+/*--------------------*/
+
+@media screen and (min-width:600px) and (max-width:960px) {
+    #inicio figcaption article {
+        margin-inline: 3em;
+    }
+
+    #inicio .home-text em {
+        font-size: 1.325em;
+    }
+
+    #inicio .home-text span {
+        font-size: 1.25em;
+    }
+
+    #inicio .home-text p {
+        font-size: .625em;
+    }
+
+    #inicio figcaption article footer a {
+        font-size: .5em;
+    }
+
+    #inicio figcaption article {
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width:599px) {
+    #inicio .home-text em {
+        font-size: 2em;
+    }
+
+    #inicio .home-text span {
+        font-size: 1.75em;
+    }
+
+    #inicio .home-text p {
+        font-size: .9em;
+    }
+
+    #inicio figcaption article footer a {
+        font-size: .875em;
+    }
+}

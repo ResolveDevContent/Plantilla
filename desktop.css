@@ -1,0 +1,69 @@
+/*----------NAVBAR----------*/
+
+.navbar .navbar-logo {
+    width: 13em;
+}
+
+.navbar .navbar-responsive {
+    display: none;
+}
+
+.navbar ul li a::after{
+    content: "";
+    width: 0.5em;
+    height: 0.125em;
+    background-color: transparent;
+    transition: all 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar ul li a:hover::after{
+    content: "";
+    width: 1.5em;
+    height: 0.125em;
+    background-color: var(--secondary);
+    display: block;
+    margin: 0 auto;
+}
+
+/*----------SERVICIOS----------*/
+
+
+/*----------SOBRE NOSOTROS----------*/
+
+/*--------------DATOS---------------*/
+
+#datos .item + .item{
+    margin-left: 2em;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto > div > section {
+    width: 60%;
+}
+
+/*---------FOOTER---------*/
+
+.footer > section {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footer-brand {
+    align-items: start;
+    width: 15em;
+}
+
+.footer .footer-links, 
+.footer .footer-socials {
+    align-items: start;
+    width: 8em;
+}
+
+.footer .footer-brand > span {
+    font-size: .875em;
+}
+
+/*--------------------*/
+

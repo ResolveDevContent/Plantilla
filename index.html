@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./mobile.css" media="screen and (max-width: 959px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 960px)">
     <title>Plantilla</title>
 </head>
 <body>
@@ -24,8 +26,51 @@
                     <a href="#">Item 3</a>
                 </li>
             </ul>
-            <div>
+            <div class="navbar-buttons">
                 <a href="#">Boton</a>
+            </div>
+
+            <div class="navbar-responsive">
+                <label for="menu">
+                    Menu
+                    <i class="icon menu"></i>
+                </label>
+                <input type="checkbox" name="menu-responsive" id="menu">
+                <article class="popup">
+                    <label class="background" for="menu"></label>
+                    <ul>
+                        <li class="menu-close">
+                            <em>Men&uacute;</em>
+                            <label for="menu">
+                                <i class="icon close"></i>
+                            </label>
+                        </li>
+                        <li>
+                            <a href="#inicio">
+                                <i class="icon home"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sobre-nosotros">
+                                <i class="icon about-us"></i>
+                                <span>Sobre nosotros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#servicios">
+                                <i class="icon service"></i>
+                                <span>Servicios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto">
+                                <i class="icon mail"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </nav>
     </header>
@@ -269,7 +314,7 @@
                         <span class="text-start">Escrib&iacute; tu mensaje...</span>
                         <textarea required name="mensaje"></textarea>
                     </div>
-                    <div>
+                    <div class="container-mail">
                         <div>
                             <em>Seleccione el mail a utilizar</em>
                         </div>
