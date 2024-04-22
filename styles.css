@@ -164,7 +164,67 @@ ul {
 #servicios > ul {
     align-items: stretch;
     margin-bottom: 2em;
+    gap: 1em;
 }
+
+#servicios .item {
+    background-color: #eee;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 16em;
+}
+
+#servicios .item > div > strong {
+    font-size: 1.25em;
+    color: white;
+}
+
+#servicios .item > header {
+    position: relative;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    max-width: 16em;
+}
+
+#servicios .item > header span {
+    font-size: 0.75em;
+}
+
+#servicios .item > article {
+    flex-grow: 1;
+}
+
+#servicios .item > article > ul {
+    list-style: none;
+    gap: 0.5em;
+}
+
+#servicios .item > article > ul > li .check {
+    background-color: #78e08f;
+}
+
+#servicios .item > article > ul > li > span{
+    white-space: pre-wrap;
+}
+
+#servicios .item > footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#servicios .item > footer > a {
+    background-color: var(--bg-primary);
+    padding: .5em 1em;
+    border-radius: 1em;
+    font-weight: 600;
+    color: white;
+    transition: all 0.5s;
+}
+
+#servicios .item > footer > a:hover {
+    background-color: var(--bg-secondary);
+}
+
 
 /* -------- CONTACTO --------- */
 
