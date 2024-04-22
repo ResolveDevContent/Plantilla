@@ -284,7 +284,7 @@ ul {
 #contacto .formulario > div > textarea {
     width: 100%;
     border: none;
-    padding: .5em;
+    padding: 1em 0;
     border-bottom: 1px solid var(--bg-primary);
     resize: none;
     outline: none;
