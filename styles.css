@@ -131,6 +131,7 @@ ul {
 }
 
 #sobre-nosotros > article > aside > img {
+    width: 100%;
     height: 14em;
     background-color: var(--bg-secondary);
 }
@@ -240,6 +241,10 @@ ul {
     width: 40%;
 }
 
+#contacto > div > aside > ul {
+    margin-top: 2em;
+}
+
 #contacto .socials {
     margin-block: .5em;
     padding: 1em;
@@ -249,10 +254,59 @@ ul {
 #contacto > div > section {
     flex: 1;
     padding: 1em;
-    background-color: gray;
+    background-color: white;
     border-radius: .5em;
 }
 
+#contacto .formulario {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#contacto .formulario > div {
+    width: 100%;
+    margin-block: .5em;
+}
+
+#contacto .formulario > div > input,
+#contacto .formulario > div > textarea {
+    width: 100%;
+    border: none;
+    padding: .5em;
+    border-bottom: 1px solid var(--bg-primary);
+    resize: none;
+    outline: none;
+}
+
+#contacto .formulario > div > div {
+    margin-block: .5em;
+}
+
+#contacto .formulario > div > div > label > input {
+    display: none;
+}
+
+#contacto .formulario > div > div > label {
+    width: 3em;
+    height: 3em;
+    background-color: var(--bg-secondary);
+    margin-inline: .5em;
+}
+
+#contacto .formulario > div > div > label.active {
+    background-color: var(--bg-primary);
+}
+
+#contacto .formulario > div > span {
+    color: var(--color-secondary);
+}
+
+#contacto .formulario > div > a {
+    background-color: var(--bg-primary);
+    color: white;
+    padding: .5em 2em;
+    border-radius: 1em;
+}
 
 /* -------------------------- */
 
