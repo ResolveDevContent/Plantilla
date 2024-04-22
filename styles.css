@@ -124,19 +124,33 @@ ul {
     background-color: var(--bg-secondary);
 }
 
-
 /* --------SOBRE NOSOTROS-------- */
 
 #sobre-nosotros > article > aside {
     width: 40%;
 }
 
+#sobre-nosotros > article > aside > img {
+    height: 14em;
+    background-color: var(--bg-secondary);
+}
+
 #sobre-nosotros > article > div {
     flex: 1;
+    height: 14em;
+    padding-left: 3em;
+}
+
+#sobre-nosotros > article > div > header {
+    margin-block: .5em 1em;
+}
+
+#sobre-nosotros > article > div > header > span {
+    text-transform: uppercase;
+    font-size: .67em;
 }
 
 /* ------SERVICIOS--------- */
-
 
 #servicios > header {
     text-align: center;
