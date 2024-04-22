@@ -54,6 +54,14 @@ ul {
     flex-direction: row;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
 /* -------------------------- */
 
 .navbar {
@@ -250,11 +258,16 @@ ul {
 }
 
 #contacto > div > aside {
-    width: 40%;
+    width: 100%;
+}
+
+#contacto > div > aside > header > h2 {
+    font-size: 3.5em;
 }
 
 #contacto > div > aside > ul {
     margin-top: 2em;
+    gap: 1em;
 }
 
 #contacto .socials {
@@ -264,10 +277,11 @@ ul {
 }
 
 #contacto > div > section {
-    flex: 1;
-    padding: 1em;
-    background-color: white;
+    width: 60%;
+    padding: 2em;
     border-radius: .5em;
+    background-color: white;
+    margin-top: 1em;
 }
 
 #contacto .formulario {
@@ -279,6 +293,7 @@ ul {
     width: 100%;
     margin-block: .5em;
 }
+
 
 #contacto .formulario > div > input,
 #contacto .formulario > div > textarea {
@@ -313,7 +328,6 @@ ul {
     color: var(--color-secondary);
     display: block;
     width: 100%;
-    text-align: start;
 }
 
 #contacto .formulario > div > a {
