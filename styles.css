@@ -311,6 +311,9 @@ ul {
 
 #contacto .formulario > div > span {
     color: var(--color-secondary);
+    display: block;
+    width: 100%;
+    text-align: start;
 }
 
 #contacto .formulario > div > a {
@@ -319,6 +322,8 @@ ul {
     padding: .5em 2em;
     border-radius: 1em;
 }
+
+
 
 /* -------------------------- */
 
