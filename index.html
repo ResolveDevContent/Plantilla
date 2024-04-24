@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./mobile.css" media="screen and (max-width: 959px)">
-    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 960px)">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 959px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 960px)">
     <title>Plantilla</title>
 </head>
 <body>
@@ -32,7 +33,6 @@
 
             <div class="navbar-responsive">
                 <label for="menu">
-                    Menu
                     <i class="icon menu"></i>
                 </label>
                 <input type="checkbox" name="menu-responsive" id="menu">
@@ -53,7 +53,7 @@
                         </li>
                         <li>
                             <a href="#sobre-nosotros">
-                                <i class="icon about-us"></i>
+                                <i class="icon user"></i>
                                 <span>Sobre nosotros</span>
                             </a>
                         </li>
@@ -82,10 +82,10 @@
                     <figcaption class="flex items-center justify-center">
                         <article class="flex flex-col">
                             <div class="home-text flex flex-col items-center justify-center">
-                                <span>TITULO</span>
-                                <p>
+                                <em>TITULO</em>
+                                <span>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae quis sed similique. Obcaecati molestiae quis sed similique
-                                </p>
+                                </span>
                                 <p>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae quis sed similique. Obcaecati molestiae quis sed similique
                                 </p>
@@ -101,9 +101,9 @@
     </section>
 
     <section id="sobre-nosotros" class="flex items-center justify-center flex-col">
-        <article class="flex items-center justify-center">
+        <article class="flex items-start justify-center">
             <aside class="flex flex-col justify-center items-start">
-                <img src="#" alt="SOBRE NOSOTROS">
+                <img src="./images/about-us.jpg" alt="SOBRE NOSOTROS">
             </aside>
             <div>
                 <header>
@@ -125,7 +125,7 @@
             <ul class="flex items-center justify-between">
                 <li class="item flex flex-col items-center">
                     <div>
-                        <i>ICONO</i>
+                        <i class="icon service"></i>
                     </div>
                     <div>
                         <em>Titulo</em>
@@ -136,7 +136,7 @@
                 </li>
                 <li class="item flex flex-col items-center">
                     <div>
-                        <i>ICONO</i>
+                        <i class="icon service"></i>
                     </div>
                     <div>
                         <em>Titulo</em>
@@ -147,7 +147,7 @@
                 </li>
                 <li class="item flex flex-col items-center">
                     <div>
-                        <i>ICONO</i>
+                        <i class="icon service"></i>
                     </div>
                     <div>
                         <em>Titulo</em>
@@ -176,23 +176,18 @@
                 <article>
                     <ul class="flex flex-col">
                         <li class="flex items-center">
-                            <i class="icon check"></i>
                             <span>Caracteristica 1</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 2</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 3</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 4</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 5</span>
                         </li>
                     </ul>
@@ -211,23 +206,18 @@
                 <article>
                     <ul class="flex flex-col">
                         <li class="flex items-center">
-                            <i class="icon check"></i>
                             <span>Caracteristica 1</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 2</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 3</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 4</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 5</span>
                         </li>
                     </ul>
@@ -246,23 +236,18 @@
                 <article>
                     <ul class="flex flex-col">
                         <li class="flex items-center">
-                            <i class="icon check"></i>
                             <span>Caracteristica 1</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 2</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 3</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 4</span>
                         </li>
                         <li>
-                            <i class="icon check"></i>
                             <span>Caracteristica 5</span>
                         </li>
                     </ul>
@@ -285,12 +270,12 @@
                 </header>
 
                 <ul class="flex items-center justify-center">
-                    <li class="socials flex items-center">
-                        <i></i>ICONO
+                    <li class="socials flex items-center justify-center">
+                        <i class="icon instagram"></i>
                         <span>INSTAGRAM</span>
                     </li>
-                    <li class="socials flex items-center">
-                        <i></i>ICONO
+                    <li class="socials flex items-center justify-center">
+                        <i class="icon mail"></i>
                         <span>MAIL</span>
                     </li>
                 </ul>
@@ -319,13 +304,13 @@
                             <em>Seleccione el mail a utilizar</em>
                         </div>
                         <div class="flex items-center justify-center">
-                            <label class="flex items-center active">
+                            <label class="flex items-center justify-center active" title="Hotmail">
                                 <input type="radio" name="mail" value="hotmail" checked>
-                                <img src="#" alt="hotmail">
+                                <i class="icon mail"></i>
                             </label>
-                            <label class="flex items-center">
+                            <label class="flex items-center justify-center" title="Gmail">
                                 <input type="radio" name="mail" value="gmail">
-                                <img src="#" alt="GMAIL">
+                                <i class="icon gmail"></i>
                             </label>
                         </div>
                     </div>
@@ -369,10 +354,10 @@
                 </div>
                 <div>
                     <em>Redes sociales</em>
-                    <ul class="redes flex flex-col items-start justify-center">
+                    <ul class="redes flex flex-col items-center justify-center">
                         <li>
                             <a href="#">
-                                <img src="#" alt="INSTAGRAM">
+                                <i class="icon instagram"></i>
                             </a>
                         </li>
                     </ul>

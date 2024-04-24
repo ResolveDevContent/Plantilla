@@ -17,11 +17,6 @@ body {
     background-color: white;
 }
 
-.navbar .navbar-responsive article.popup .icon {
-    background-color: var(--primary);
-    margin-right: .625em;
-}
-
 .navbar > nav ul,
 .navbar .navbar-buttons {
     display: none;
@@ -118,6 +113,7 @@ body {
 
 .navbar .navbar-responsive .popup ul li a span{
     font-weight: bold;
+    margin-left: .5em;
 }
 
 .navbar .navbar-responsive ul li a span::after{
@@ -141,7 +137,13 @@ body {
 
 #inicio figcaption article {
     max-width: 100%;
-    margin-inline: 1em;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio .home-text span {
+    height: auto;
 }
 
 /*----------SERVICIOS----------*/
@@ -161,18 +163,13 @@ body {
 }
 
 #servicios > ul {
-    overflow-x: auto;
-    white-space: nowrap;
     gap: 2em;
     width: 100%;
-    justify-content: space-evenly;
-    scroll-snap-type: x mandatory;
+    flex-direction: column;
 }
 
 #servicios .card {
     width: 100%;
-    scroll-snap-align: center;
-    flex: none;
 }
 
 #servicios .card > div {
@@ -190,25 +187,10 @@ body {
 
 #servicios .card > header > strong {
     white-space: initial;
-    font-size: 1.75em;
 }
 
 #servicios .card > header > span {
     white-space: normal;
-    font-size: 0.8em;
-}
-
-#servicios .card > article{
-    margin-top: .5em;
-}
-
-#servicios footer {
-    text-align: center;
-}
-
-#servicios .card > .ribbon {
-    margin-left: -2em;
-    margin-right: -2em;
 }
 
 /*----------SOBRE NOSOTROS---------*/
@@ -222,7 +204,8 @@ body {
 }
 
 #sobre-nosotros > article > div {
-    padding-left: 0;
+    padding: 0;
+    padding-top: 2em;
 }
 
 #sobre-nosotros > article > div > header {
@@ -238,10 +221,6 @@ body {
 
 #datos .item {
     align-items: start;
-}
-
-#datos .item > div + div {
-    text-align: start;
 }
 
 /*----------CONTACTO----------*/
@@ -284,24 +263,24 @@ body {
 /*--------------------*/
 
 @media screen and (min-width:600px) and (max-width:960px) {
-    #inicio figcaption article {
-        margin-inline: 3em;
-    }
-
     #inicio .home-text em {
-        font-size: 1.325em;
+        font-size: 2em;
     }
 
     #inicio .home-text span {
-        font-size: 1.25em;
+        font-size: 1em;
     }
 
     #inicio .home-text p {
-        font-size: .625em;
+        font-size: .875em;
     }
 
     #inicio figcaption article footer a {
-        font-size: .5em;
+        font-size: .685em;
+    }
+
+    .navbar > nav {
+        padding: .5em 2em;
     }
 
     #inicio figcaption article {
@@ -311,18 +290,22 @@ body {
 
 @media screen and (max-width:599px) {
     #inicio .home-text em {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     #inicio .home-text span {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
     #inicio .home-text p {
-        font-size: .9em;
+        font-size: 1em;
     }
 
     #inicio figcaption article footer a {
         font-size: .875em;
+    }
+
+    .navbar > nav {
+        padding: 1em 1.5em;
     }
 }

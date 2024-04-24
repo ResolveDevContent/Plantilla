@@ -1,0 +1,49 @@
+.icon {
+    width: 2em;
+    height: 2em;
+    display: block;
+    background-color: black;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.icon.menu {
+    mask-image: url('../icons/menu.svg');
+    -webkit-mask-image: url('../icons/menu.svg');
+}
+
+.icon.instagram {
+    mask-image: url('../icons/instagram.svg');
+    -webkit-mask-image: url('../icons/instagram.svg');
+}
+
+.icon.mail {
+    mask-image: url('../icons/mail.svg');
+    -webkit-mask-image: url('../icons/mail.svg');
+}
+
+.icon.close {
+    mask-image: url('../icons/close.svg');
+    -webkit-mask-image: url('../icons/close.svg');
+}
+
+.icon.home {
+    mask-image: url('../icons/home.svg');
+    -webkit-mask-image: url('../icons/home.svg');
+}
+
+.icon.user {
+    mask-image: url('../icons/user.svg');
+    -webkit-mask-image: url('../icons/user.svg');
+}
+
+.icon.service {
+    mask-image: url('../icons/service.svg');
+    -webkit-mask-image: url('../icons/service.svg');
+}
+
+.icon.gmail {
+    mask-image: url('../icons/gmail.svg');
+    -webkit-mask-image: url('../icons/gmail.svg');
+}
+

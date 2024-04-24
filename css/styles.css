@@ -77,7 +77,6 @@ a {
 /* -------------------------- */
 
 .navbar {
-    padding: .5em 2em;
     background-color: white;
 
     position: fixed;
@@ -89,7 +88,7 @@ a {
 }
 
 .navbar > nav {
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     width: 100%;
 }
 .navbar > nav > ul {
@@ -107,7 +106,9 @@ a {
     width: 100%;
     height: 100vh;
 
-    background-image: url("");
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -115,28 +116,29 @@ a {
     position: absolute;
     inset: 0;
     text-align: center;
-    backdrop-filter: brightness(.5);
+    backdrop-filter: blur(4px);
 }
 
 #inicio figcaption article {
-    gap: 2.5em;
+    gap: 3em;
+    margin: 2em;
 }
 
 #inicio .home-text {
-    gap: 0.5em;
-    color: white;
+    gap: 1em;
+    color: black;
     cursor: default;
 }
 
 #inicio .home-text span {
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 2em;
     height: 2.75em;
     line-height: 1.25em;
 }
 
 #inicio .home-text em {
-    font-size: 2em;
+    font-size: 4em;
 }
 
 #inicio .home-text p {
@@ -145,11 +147,12 @@ a {
 }
 
 #inicio figcaption article footer a{
-    padding: 0.5em;
+    padding: 0.5em 2em;
     text-transform: uppercase;
     color: white;
     background-color: var(--bg-primary);
     border-radius: 1em;
+    margin-top: 4em;
 }
 
 #inicio figcaption article footer a:hover {
@@ -159,19 +162,18 @@ a {
 /* --------SOBRE NOSOTROS-------- */
 
 #sobre-nosotros > article > aside {
-    width: 40%;
+    width: 45%;
 }
 
 #sobre-nosotros > article > aside > img {
     width: 100%;
-    height: 14em;
     background-color: var(--bg-secondary);
 }
 
 #sobre-nosotros > article > div {
     flex: 1;
-    height: 14em;
-    padding-left: 3em;
+    padding: 0 2em;
+    font-size: 1.125em;
 }
 
 #sobre-nosotros > article > div > header {
@@ -229,6 +231,7 @@ a {
 
 #datos .item > div > p {
     margin-top: .5em;
+    width: 80%;
 }
 
 
@@ -247,6 +250,8 @@ a {
     align-items: stretch;
     margin-bottom: 2em;
     gap: 1em;
+    width: 100%;
+    justify-content: space-around;
 }
 
 #servicios .card {
@@ -254,6 +259,7 @@ a {
     padding: 2em;
     border-radius: 1em;
     min-height: 16em;
+    box-shadow: 10px 10px 12px -2px rgba(0, 0, 0, 0.2);
 }
 
 #servicios .card > div > strong {
@@ -264,7 +270,6 @@ a {
 #servicios .card > header {
     position: relative;
     gap: 0.5em;
-    margin-bottom: 1em;
     max-width: 16em;
 }
 
@@ -278,6 +283,7 @@ a {
 
 #servicios .card > article {
     flex-grow: 1;
+    margin: 2em 0 0 1em;
 }
 
 #servicios .card > article > ul {
@@ -294,7 +300,7 @@ a {
 }
 
 #servicios .card > footer {
-    margin-top: 2em;
+    margin-top: 4em;
     text-align: center;
 }
 
@@ -342,6 +348,10 @@ a {
     background-color: gray;
 }
 
+#contacto .socials > span {
+    margin-left: .25em;
+}
+
 #contacto > div > section {
     padding: 2em;
     border-radius: .5em;
@@ -374,19 +384,24 @@ a {
     margin-block: .5em;
 }
 
-#contacto .formulario > div > div > label > input {
-    display: none;
-}
-
 #contacto .formulario > div > div > label {
     width: 3em;
     height: 3em;
     background-color: var(--bg-secondary);
     margin-inline: .5em;
+    cursor: pointer;
 }
 
 #contacto .formulario > div > div > label.active {
     background-color: var(--bg-primary);
+}
+
+#contacto .formulario > div > div > label > input {
+    display: none;
+}
+
+#contacto .formulario > div > div > label > i {
+    background-color: white;
 }
 
 #contacto .formulario > div > span {
