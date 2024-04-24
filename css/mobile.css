@@ -236,6 +236,10 @@ body {
     gap: 1em;
 }
 
+#footer > section > article {
+    align-items: start;
+}
+
 /*--------------------*/
 
 @keyframes popup {
