@@ -1,8 +1,9 @@
 :root {
-    --bg-primary: black;
-    --bg-secondary: gray;
-    --color-primary: black;
-    --color-secondary: gray;
+    --light: #00a8ff;
+    --dark: #005786;
+    --muted: #0b8dd3;
+    --muted-light: #139ee9;
+    --muted-dark: #0e7ab5;
 }
 
 * {
@@ -24,7 +25,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-primary);
 }
 
 #sobre-nosotros,
@@ -95,6 +96,10 @@ a {
     gap: 1em;
 }
 
+.navbar > nav > ul > li > a {
+    color: var(--);
+}
+
 /* -------------------------- */
 
 #inicio{
@@ -126,7 +131,6 @@ a {
 
 #inicio .home-text {
     gap: 1em;
-    color: black;
     cursor: default;
 }
 
@@ -135,28 +139,31 @@ a {
     font-size: 2em;
     height: 2.75em;
     line-height: 1.25em;
+    color: black;
 }
 
 #inicio .home-text em {
     font-size: 4em;
+    color: black;
 }
 
 #inicio .home-text p {
     font-size: 1.125em;
     max-width: 50em;
+    color: black;
 }
 
 #inicio figcaption article footer a{
     padding: 0.5em 2em;
     text-transform: uppercase;
     color: white;
-    background-color: var(--bg-primary);
+    background-color: var(--muted);
     border-radius: 1em;
     margin-top: 4em;
 }
 
 #inicio figcaption article footer a:hover {
-    background-color: var(--bg-secondary);
+    background-color: var(--muted-light);
 }
 
 /* --------SOBRE NOSOTROS-------- */
@@ -167,7 +174,6 @@ a {
 
 #sobre-nosotros > article > aside > img {
     width: 100%;
-    background-color: var(--bg-secondary);
 }
 
 #sobre-nosotros > article > div {
@@ -201,7 +207,7 @@ a {
     width: 6em;
     height: 6em;
     display: block;
-    background-color: var(--bg-primary);
+    background-color: var(--light);
 }
 
 #datos .item > div:first-child::after {
@@ -209,7 +215,7 @@ a {
     display: block;
     width: 80%;
     height: .2em;
-    background-color: var(--bg-secondary);
+    background-color: var(--light);
     position: relative;
     margin-top: 1em;
 }
@@ -305,7 +311,7 @@ a {
 }
 
 #servicios .card > footer > a {
-    background-color: var(--bg-primary);
+    background-color: var(--muted);
     padding: .5em 1em;
     border-radius: 1em;
     font-weight: 600;
@@ -315,14 +321,14 @@ a {
 }
 
 #servicios .card > footer > a:hover {
-    background-color: var(--bg-secondary);
+    background-color: var(--muted-light);
 }
 
 
 /* -------- CONTACTO --------- */
 
 #contacto {
-    background-color: whitesmoke;
+    background-color: #eee;
 }
 
 #contacto > div {
@@ -345,11 +351,12 @@ a {
 #contacto .socials {
     margin-block: .5em;
     padding: 1em;
-    background-color: gray;
+    background-color: var(--light);
 }
 
 #contacto .socials > span {
     margin-left: .25em;
+    color: white;
 }
 
 #contacto > div > section {
@@ -375,7 +382,7 @@ a {
     width: 100%;
     border: none;
     padding: 1em 0;
-    border-bottom: 1px solid var(--bg-primary);
+    border-bottom: 1px solid var(--light);
     resize: none;
     outline: none;
 }
@@ -387,13 +394,13 @@ a {
 #contacto .formulario > div > div > label {
     width: 3em;
     height: 3em;
-    background-color: var(--bg-secondary);
+    background-color: var(--muted-dark);
     margin-inline: .5em;
     cursor: pointer;
 }
 
 #contacto .formulario > div > div > label.active {
-    background-color: var(--bg-primary);
+    background-color: var(--muted-light);
 }
 
 #contacto .formulario > div > div > label > input {
@@ -405,13 +412,13 @@ a {
 }
 
 #contacto .formulario > div > span {
-    color: var(--color-secondary);
+    color: black;
     display: block;
     width: 100%;
 }
 
 #contacto .formulario > div > a {
-    background-color: var(--bg-primary);
+    background-color: var(--muted);
     color: white;
     padding: .5em 2em;
     border-radius: 1em;
@@ -420,7 +427,7 @@ a {
 /* -------------------------- */
 
 #footer {
-    background-color: gray;
+    background-color: #eee;
     padding: 2em 2em .5em 2em;
     margin-top: 6em;
 }
@@ -456,7 +463,7 @@ a {
 
 #footer .links > li a,
 #footer .redes > li a {
-    color: var(--color-primary);
+    color: black;
     text-decoration: none;
 }
 
